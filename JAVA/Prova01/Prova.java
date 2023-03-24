@@ -28,7 +28,8 @@ public class Prova {
     }
 
     public void Situacao02() {
-        System.out.println("Bem vindo ao sistema da Escola Corleone do Brooklyn. Informe o número de matricula do aluno:");
+        System.out.println(
+                "Bem vindo ao sistema da Escola Corleone do Brooklyn. Informe o número de matricula do aluno:");
         int matricula = sc.nextInt();
         // (Time do Chris, Time do Greg, Time do Caruso, Time do Jerome).
         Random rd = new Random();
@@ -56,7 +57,7 @@ public class Prova {
             System.out.println("Seleção inválida.");
         }
     }
-    
+
     public void Situacao03() {
         // Morangos – R$ 2,50 o kilo;
         // Maças – R$ 1,80 o kilo;
@@ -68,6 +69,7 @@ public class Prova {
         System.out.println("(1) para Morangos;");
         System.out.println("(2) para Maçãs");
         System.out.println("(3) para Bananas");
+
         int selecao01 = sc.nextInt();
         String fruta1 = ("");
         switch (selecao01) {
