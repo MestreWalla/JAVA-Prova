@@ -181,7 +181,7 @@ public class Prova {
         } else {
             System.out.println(fruta3 + kg03 + "=" + valorBanana + (valorBanana * kg03));
         }
-        double valorTotal = (fruta2 * kg02) + (fruta1 * kg01) + (fruta3 * kg03);
+        double valorTotal = (selecao02 * kg02) + (selecao01 * kg01) + (selecao03 * kg03);
         if (valorTotal >= 25) {
             double desconto = 0.1;
             System.out.println("O valor total da compra é" + (valorTotal - (valorTotal * desconto)));
