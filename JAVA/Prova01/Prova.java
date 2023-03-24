@@ -141,7 +141,7 @@ public class Prova {
 
         if (fruta3 == "Morangos" || fruta3 == "Maças" || fruta3 == "Bananas") {
             System.out.println("A fruta escolhida foi " + fruta3 + "informe a quantidade em kilos:");
-            double kg02 = sc.nextInt();
+            double kg03 = sc.nextInt();
             System.out.println(fruta3 + kg03);
         } else {
             System.out.println("Seleção invalida.");
