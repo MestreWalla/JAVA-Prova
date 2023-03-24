@@ -112,7 +112,7 @@ public class Prova {
         }
 
         if (fruta2 == "Morangos" || fruta2 == "Maças" || fruta2 == "Bananas") {
-            System.out.println("A fruta escolhida foi " + fruta2, "informe a quantidade em kilos:");
+            System.out.println("A fruta escolhida foi " + fruta2 + "informe a quantidade em kilos:");
             double kg02 = sc.nextInt();
             System.out.println(fruta2 + kg02);
         } else {
@@ -140,7 +140,7 @@ public class Prova {
         }
 
         if (fruta3 == "Morangos" || fruta3 == "Maças" || fruta3 == "Bananas") {
-            System.out.println("A fruta escolhida foi " + fruta3, "informe a quantidade em kilos:");
+            System.out.println("A fruta escolhida foi " + fruta3 + "informe a quantidade em kilos:");
             double kg02 = sc.nextInt();
             System.out.println(fruta3 + kg03);
         } else {
@@ -174,7 +174,7 @@ public class Prova {
         }
         double valorTotal = (fruta2 * kg02) + (fruta1 * kg01) + (fruta3 * kg03);
         if (valorTotal >= 25) {
-            int desconto = .1;
+            double desconto = 0.1;
             System.out.println("O valor total da compra é" + (valorTotal - (valorTotal * desconto)));
         } else {
             System.out.println("O valor total da compra é" + valorTotal);
