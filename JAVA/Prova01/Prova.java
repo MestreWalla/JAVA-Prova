@@ -74,9 +74,9 @@ public class Prova {
         double valorMaca = 1.8;
         double valorBanana = 1.3;
 
-        double kg01 = sc.nextInt();
-        double kg02 = sc.nextInt();
-        double kg03 = sc.nextInt();
+        double kg01 = 0;
+        double kg02 = 0;
+        double kg03 = 0;
 
         int selecao01 = sc.nextInt();
         String fruta1 = ("");
