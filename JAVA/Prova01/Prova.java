@@ -28,24 +28,35 @@ public class Prova {
     }
 
     public void Situacao02() {
-        System.out.println(
-                "Bem vindo ao sistema da Escola Corleone do Brooklyn. Informe o número de matricula do aluno:");
+        System.out.println("Bem vindo ao sistema da Escola Corleone do Brooklyn. Informe o número de matricula do aluno:");
         int matricula = sc.nextInt();
         // (Time do Chris, Time do Greg, Time do Caruso, Time do Jerome).
         Random rd = new Random();
-        int random = rd.nextInt(4);
-        int time = 0;
-        if (time == 0) {
-        System.out.println("Você esta registrado no time " + 0);
-        } else if (time == 1) {
-        System.out.println("Você esta registrado no time" + 1);
-        } else if (time == 2) {
-        System.out.println("Você esta registrado no time" + 2);
-        } else if (time == 3) {
-        System.out.println("Você esta registrado no time" + 3);
+        int entrada = rd.nextInt(4);
+        String time = "do Chris";
+        switch (entrada) {
+            case 0:
+                time = "do Chris";
+                break;
+            case 1:
+                time = "do Greg";
+                break;
+            case 2:
+                time = "do Caruso";
+                break;
+            case 3:
+                time = "do Jerome";
+                break;
+            default:
+                break;
+        }
+        if (time == "do Chris" || time == "do Greg" || time == "do Caruso" || time == "do Jerome") {
+            System.out.println("Você está registrado no time " + time);
+        } else {
+            System.out.println("Seleção inválida.");
         }
     }
-
+    
     public void Situacao03() {
         // Morangos – R$ 2,50 o kilo;
         // Maças – R$ 1,80 o kilo;
@@ -69,15 +80,17 @@ public class Prova {
             case 3:
                 fruta1 = ("Bananas");
                 break;
-                default:
+            default:
                 break;
         }
         if (fruta1 == "Morangos" || fruta1 == "Maças" || fruta1 == "Bananas") {
-            System.out.println("A fruta escolhida foi " + fruta1 , "informe a quantidade em kilos:");
+            System.out.println("A fruta escolhida foi " + fruta1 + "informe a quantidade em kilos:");
             double kg01 = sc.nextInt();
             System.out.println(fruta1 + kg01);
-        } else {System.out.println("Seleção invalida.");}
-        
+        } else {
+            System.out.println("Seleção invalida.");
+        }
+
         System.out.println("Informe com numero de 1 a 3 o que ira comprar:");
         System.out.println("(1) para Morangos;");
         System.out.println("(2) para Maçãs");
@@ -94,16 +107,18 @@ public class Prova {
             case 3:
                 fruta2 = ("Bananas");
                 break;
-                default:
+            default:
                 break;
         }
 
         if (fruta2 == "Morangos" || fruta2 == "Maças" || fruta2 == "Bananas") {
-            System.out.println("A fruta escolhida foi " + fruta2 , "informe a quantidade em kilos:");
+            System.out.println("A fruta escolhida foi " + fruta2, "informe a quantidade em kilos:");
             double kg02 = sc.nextInt();
             System.out.println(fruta2 + kg02);
-        } else {System.out.println("Seleção invalida.");}
-        
+        } else {
+            System.out.println("Seleção invalida.");
+        }
+
         System.out.println("Informe com numero de 1 a 3 o que ira comprar:");
         System.out.println("(1) para Morangos;");
         System.out.println("(2) para Maçãs");
@@ -120,46 +135,49 @@ public class Prova {
             case 3:
                 fruta3 = ("Bananas");
                 break;
-                default:
+            default:
                 break;
         }
 
         if (fruta3 == "Morangos" || fruta3 == "Maças" || fruta3 == "Bananas") {
-            System.out.println("A fruta escolhida foi " + fruta3 , "informe a quantidade em kilos:");
+            System.out.println("A fruta escolhida foi " + fruta3, "informe a quantidade em kilos:");
             double kg02 = sc.nextInt();
             System.out.println(fruta3 + kg03);
-        } else {System.out.println("Seleção invalida.");}
+        } else {
+            System.out.println("Seleção invalida.");
+        }
 
         double valorMorango = 2.5;
         double valorMaca = 1.8;
         double valorBanana = 1.3;
 
         if (selecao01 == 1) {
-            System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango*kg01));
+            System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango * kg01));
         } else if (selecao02 == 2) {
-            System.out.println(fruta2 + kg02 + "=" + valorMaca + (valorMaca*kg02));
+            System.out.println(fruta2 + kg02 + "=" + valorMaca + (valorMaca * kg02));
         } else {
-            System.out.println(fruta3 + kg03 + "=" + valorBanana + (valorBanana*kg03));
+            System.out.println(fruta3 + kg03 + "=" + valorBanana + (valorBanana * kg03));
         }
         if (selecao02 == 1) {
-            System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango*kg01));
+            System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango * kg01));
         } else if (selecao02 == 2) {
-            System.out.println(fruta2 + kg02 + "=" + valorMaca + (valorMaca*kg02));
+            System.out.println(fruta2 + kg02 + "=" + valorMaca + (valorMaca * kg02));
         } else {
-            System.out.println(fruta3 + kg03 + "=" + valorBanana + (valorBanana*kg03));
+            System.out.println(fruta3 + kg03 + "=" + valorBanana + (valorBanana * kg03));
         }
         if (selecao03 == 1) {
-            System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango*kg01));
+            System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango * kg01));
         } else if (selecao02 == 2) {
-            System.out.println(fruta2 + kg02 + "=" + valorMaca + (valorMaca*kg02));
+            System.out.println(fruta2 + kg02 + "=" + valorMaca + (valorMaca * kg02));
         } else {
-            System.out.println(fruta3 + kg03 + "=" + valorBanana + (valorBanana*kg03));
+            System.out.println(fruta3 + kg03 + "=" + valorBanana + (valorBanana * kg03));
         }
-        double valorTotal = (fruta2 * kg02)+(fruta1 * kg01)+(fruta3 * kg03);
+        double valorTotal = (fruta2 * kg02) + (fruta1 * kg01) + (fruta3 * kg03);
         if (valorTotal >= 25) {
             int desconto = .1;
-        System.out.println("O valor total da compra é" + (valorTotal-(valorTotal*desconto)));
-    } else { System.out.println("O valor total da compra é" + valorTotal);
-}
-}
+            System.out.println("O valor total da compra é" + (valorTotal - (valorTotal * desconto)));
+        } else {
+            System.out.println("O valor total da compra é" + valorTotal);
+        }
+    }
 }
