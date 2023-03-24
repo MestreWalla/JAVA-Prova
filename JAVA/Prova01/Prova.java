@@ -95,7 +95,7 @@ public class Prova {
                 return;
         }
         if (fruta1 == "Morangos" || fruta1 == "Maças" || fruta1 == "Bananas") {
-            System.out.println("A fruta escolhida foi " + fruta1 + "informe a quantidade em kilos:");
+            System.out.println("A fruta escolhida foi " + fruta1 + " informe a quantidade em kilos:");
             kg01 = sc.nextInt();
             System.out.println(fruta1 + kg01);
         } else {
@@ -124,7 +124,7 @@ public class Prova {
         }
 
         if (fruta2 == "Morangos" || fruta2 == "Maças" || fruta2 == "Bananas") {
-            System.out.println("A fruta escolhida foi " + fruta2 + "informe a quantidade em kilos:");
+            System.out.println("A fruta escolhida foi " + fruta2 + " informe a quantidade em kilos:");
             kg02 = sc.nextInt();
             System.out.println(fruta2 + kg02);
         } else {
@@ -153,7 +153,7 @@ public class Prova {
         }
 
         if (fruta3 == "Morangos" || fruta3 == "Maças" || fruta3 == "Bananas") {
-            System.out.println("A fruta escolhida foi " + fruta3 + "informe a quantidade em kilos:");
+            System.out.println("A fruta escolhida foi " + fruta3 + " informe a quantidade em kilos:");
             kg03 = sc.nextInt();
             System.out.println(fruta3 + kg03);
         } else {
