@@ -161,7 +161,7 @@ public class Prova {
         }
 
         if (selecao01 == 1) {
-            System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango * kg01));
+            System.out.println("Fruta" + fruta1 + " Peso" + kg01 + "Valor" + valorMorango + (valorMorango * kg01));
         } else if (selecao02 == 2) {
             System.out.println(fruta2 + kg02 + "=" + valorMaca + (valorMaca * kg02));
         } else {
