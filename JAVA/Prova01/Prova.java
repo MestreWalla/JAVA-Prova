@@ -69,7 +69,7 @@ public class Prova {
         System.out.println("(2) para Maçãs");
         System.out.println("(3) para Bananas");
         int selecao01 = sc.nextInt();
-        String fruta1 = ("Morangos");
+        String fruta1 = ("");
         switch (selecao01) {
             case 1:
                 fruta1 = ("Morangos");
@@ -96,7 +96,7 @@ public class Prova {
         System.out.println("(2) para Maçãs");
         System.out.println("(3) para Bananas");
         int selecao02 = sc.nextInt();
-        String fruta2 = ("Morangos");
+        String fruta2 = ("");
         switch (selecao02) {
             case 1:
                 fruta2 = ("Morangos");
@@ -124,7 +124,7 @@ public class Prova {
         System.out.println("(2) para Maçãs");
         System.out.println("(3) para Bananas");
         int selecao03 = sc.nextInt();
-        String fruta3 = ("Morangos");
+        String fruta3 = ("");
         switch (selecao03) {
             case 1:
                 fruta3 = ("Morangos");
