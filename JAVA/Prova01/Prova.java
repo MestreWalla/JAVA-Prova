@@ -82,13 +82,13 @@ public class Prova {
         String fruta1 = ("");
         switch (selecao01) {
             case 1:
-                fruta1 = ("Morangos");
+                fruta1 = ("Morangos ");
                 break;
             case 2:
-                fruta1 = ("Maças");
+                fruta1 = ("Maças ");
                 break;
             case 3:
-                fruta1 = ("Bananas");
+                fruta1 = ("Bananas ");
                 break;
             default:
                 System.out.println("Selecao invalida");
