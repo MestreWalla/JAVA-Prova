@@ -161,25 +161,25 @@ public class Prova {
         }
 
         if (selecao01 == 1) {
-            System.out.println("Fruta " + fruta1 + " Peso " + kg01 + " Valor " + valorMorango + (valorMorango * kg01));
+            System.out.println("| Fruta: " + fruta1 + "| Peso: " + kg01 + "| Valor: " + valorMorango + (valorMorango * kg01));
         } else if (selecao02 == 2) {
-            System.out.println("Fruta " + fruta2 + " Peso " + kg02 + " Valor " + valorMaca + (valorMaca * kg02));
+            System.out.println("| Fruta: " + fruta2 + "| Peso: " + kg02 + "| Valor: " + valorMaca + (valorMaca * kg02));
         } else {
-            System.out.println("Fruta " + fruta3 + " Peso " + kg03 + " Valor " + valorBanana + (valorBanana * kg03));
+            System.out.println("| Fruta: " + fruta3 + "| Peso: " + kg03 + "| Valor: " + valorBanana + (valorBanana * kg03));
         }
         if (selecao02 == 1) {
-            System.out.println("Fruta " + fruta1 + " Peso " + kg01 + " Valor " + valorMorango + (valorMorango * kg01));
+            System.out.println("| Fruta: " + fruta1 + "| Peso: " + kg01 + "| Valor: " + valorMorango + (valorMorango * kg01));
         } else if (selecao02 == 2) {
-            System.out.println("Fruta " + fruta2 + " Peso " + kg02 + " Valor " + valorMaca + (valorMaca * kg02));
+            System.out.println("| Fruta: " + fruta2 + "| Peso: " + kg02 + "| Valor: " + valorMaca + (valorMaca * kg02));
         } else {
-            System.out.println("Fruta " + fruta3 + " Peso " + kg03 + " Valor " + valorBanana + (valorBanana * kg03));
+            System.out.println("| Fruta: " + fruta3 + "| Peso: " + kg03 + "| Valor: " + valorBanana + (valorBanana * kg03));
         }
         if (selecao03 == 1) {
-            System.out.println("Fruta " + fruta1 + " Peso " + kg01 + " Valor " + valorMorango + (valorMorango * kg01));
+            System.out.println("| Fruta: " + fruta1 + "| Peso: " + kg01 + "| Valor: " + valorMorango + (valorMorango * kg01));
         } else if (selecao02 == 2) {
-            System.out.println("Fruta " + fruta2 + " Peso " + kg02 + " Valor " + valorMaca + (valorMaca * kg02));
+            System.out.println("| Fruta: " + fruta2 + "| Peso: " + kg02 + "| Valor: " + valorMaca + (valorMaca * kg02));
         } else {
-            System.out.println("Fruta " + fruta3 + " Peso " + kg03 + " Valor " + valorBanana + (valorBanana * kg03));
+            System.out.println("| Fruta: " + fruta3 + "| Peso: " + kg03 + "| Valor: " + valorBanana + (valorBanana * kg03));
         }
         double valorTotal = (selecao02 * kg02) + (selecao01 * kg01) + (selecao03 * kg03);
         if (valorTotal >= 25) {
