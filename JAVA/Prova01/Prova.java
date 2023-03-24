@@ -106,6 +106,7 @@ public class Prova {
         System.out.println("(1) para Morangos;");
         System.out.println("(2) para Maçãs");
         System.out.println("(3) para Bananas");
+
         int selecao02 = sc.nextInt();
         String fruta2 = ("");
         switch (selecao02) {
@@ -135,6 +136,7 @@ public class Prova {
         System.out.println("(1) para Morangos;");
         System.out.println("(2) para Maçãs");
         System.out.println("(3) para Bananas");
+        
         int selecao03 = sc.nextInt();
         String fruta3 = ("");
         switch (selecao03) {
