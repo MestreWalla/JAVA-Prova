@@ -70,6 +70,14 @@ public class Prova {
         System.out.println("(2) para Maçãs");
         System.out.println("(3) para Bananas");
 
+        double valorMorango = 2.5;
+        double valorMaca = 1.8;
+        double valorBanana = 1.3;
+
+        double kg01 = sc.nextInt();
+        double kg02 = sc.nextInt();
+        double kg03 = sc.nextInt();
+
         int selecao01 = sc.nextInt();
         String fruta1 = ("");
         switch (selecao01) {
@@ -83,11 +91,12 @@ public class Prova {
                 fruta1 = ("Bananas");
                 break;
             default:
-                break;
+                System.out.println("Selecao invalida");
+                return;
         }
         if (fruta1 == "Morangos" || fruta1 == "Maças" || fruta1 == "Bananas") {
             System.out.println("A fruta escolhida foi " + fruta1 + "informe a quantidade em kilos:");
-            double kg01 = sc.nextInt();
+            kg01 = sc.nextInt();
             System.out.println(fruta1 + kg01);
         } else {
             System.out.println("Seleção invalida.");
@@ -110,12 +119,13 @@ public class Prova {
                 fruta2 = ("Bananas");
                 break;
             default:
-                break;
+                System.out.println("Selecao invalida");
+                return;
         }
 
         if (fruta2 == "Morangos" || fruta2 == "Maças" || fruta2 == "Bananas") {
             System.out.println("A fruta escolhida foi " + fruta2 + "informe a quantidade em kilos:");
-            double kg02 = sc.nextInt();
+            kg02 = sc.nextInt();
             System.out.println(fruta2 + kg02);
         } else {
             System.out.println("Seleção invalida.");
@@ -138,20 +148,17 @@ public class Prova {
                 fruta3 = ("Bananas");
                 break;
             default:
-                break;
+                System.out.println("Selecao invalida");
+                return;
         }
 
         if (fruta3 == "Morangos" || fruta3 == "Maças" || fruta3 == "Bananas") {
             System.out.println("A fruta escolhida foi " + fruta3 + "informe a quantidade em kilos:");
-            double kg03 = sc.nextInt();
+            kg03 = sc.nextInt();
             System.out.println(fruta3 + kg03);
         } else {
             System.out.println("Seleção invalida.");
         }
-
-        double valorMorango = 2.5;
-        double valorMaca = 1.8;
-        double valorBanana = 1.3;
 
         if (selecao01 == 1) {
             System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango * kg01));
@@ -163,7 +170,7 @@ public class Prova {
         if (selecao02 == 1) {
             System.out.println(fruta1 + kg01 + "=" + valorMorango + (valorMorango * kg01));
         } else if (selecao02 == 2) {
-            System.out.println((fruta2 + kg02)+ "=" + valorMaca + (valorMaca * kg02));
+            System.out.println((fruta2 + kg02) + "=" + valorMaca + (valorMaca * kg02));
         } else {
             System.out.println(fruta3 + kg03 + "=" + valorBanana + (valorBanana * kg03));
         }
