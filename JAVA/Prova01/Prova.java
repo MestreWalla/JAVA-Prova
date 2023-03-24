@@ -184,9 +184,9 @@ public class Prova {
         double valorTotal = (selecao02 * kg02) + (selecao01 * kg01) + (selecao03 * kg03);
         if (valorTotal >= 25) {
             double desconto = 0.1;
-            System.out.println("O valor total da compra é" + (valorTotal - (valorTotal * desconto)));
+            System.out.println("O valor total da compra é R$ " + (valorTotal - (valorTotal * desconto)));
         } else {
-            System.out.println("O valor total da compra é" + valorTotal);
+            System.out.println("O valor total da compra é R$ " + valorTotal);
         }
     }
 }
