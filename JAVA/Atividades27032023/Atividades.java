@@ -110,6 +110,7 @@ public class Atividades {
         
             System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
         } else if (idade >= 25 && < 35) {
+          faixaEtaria = 0;
             System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
         }
     }
