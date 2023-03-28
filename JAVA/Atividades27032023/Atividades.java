@@ -74,5 +74,28 @@ public class Atividades {
             System.out.println("A aluna com obesidade mórbida, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         }
+        String faixaEtaria = "Idade I";
+        switch (idade) {
+            case 0:
+                faixaEtaria = "Idade I";
+                break;
+            case 1:
+                faixaEtaria = "Idade II";
+                break;
+            case 2:
+                faixaEtaria = "Idade III";
+                break;
+            case 3:
+                faixaEtaria = "Idade IV";
+                break;
+            case 4:
+                faixaEtaria = "Idade V";
+                break;
+            case 5:
+                faixaEtaria = "Idade VI";
+                break;
+            default:
+                break;
+        }
     }
 }
