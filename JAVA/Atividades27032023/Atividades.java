@@ -17,9 +17,9 @@ public class Atividades {
         System.out.println("Digite o sexo do aluno:");
         String sexo = sc.nextLine();
         System.out.println("Digite a altura do aluno:");
-        int altura = sc.nextInt();
+        double altura = sc.nextDouble();
         System.out.println("Digite o peso do aluno:");
-        int peso = sc.nextInt();
+        double peso = sc.nextDouble();
 
         // formulas
         double imc = peso / (altura * altura);
@@ -107,6 +107,7 @@ public class Atividades {
                 break;
         }
         if (idade >= 16 && < 25) {
+        
             System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
         } else if (idade >= 25 && < 35) {
             System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
