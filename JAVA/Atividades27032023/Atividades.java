@@ -74,7 +74,16 @@ public class Atividades {
             System.out.println("A aluna com obesidade mórbida, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         }
-        String faixaEtaria = "Idade I";
+
+// Identificar a Faixa Etário do Aluno:
+// Idade I - 16 a 25 anos
+// Idade II - 25 a 35 anos
+// Idade III – 36 a 45 anos
+// Idade IV – 46 a 55 anos
+// Idade V – 56 a 65 anos
+// Idade VI – 66+
+
+        String faixaEtaria = "";
         switch (idade) {
             case 0:
                 faixaEtaria = "Idade I";
@@ -96,6 +105,11 @@ public class Atividades {
                 break;
             default:
                 break;
+        }
+        if (idade >= 16 && < 25) {
+            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 25 && < 35) {
+            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
         }
     }
 }
