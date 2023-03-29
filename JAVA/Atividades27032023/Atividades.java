@@ -107,9 +107,22 @@ public class Atividades {
                 break;
         }
         if (idade >= 16 && < 25) {
-        
+            faixaEtaria = 0;
             System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
         } else if (idade >= 25 && < 35) {
+            faixaEtaria = 1;
+            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 36 && < 45) {
+            faixaEtaria = 2;
+            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 46 && < 55) {
+            faixaEtaria = 1;
+            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 56 && < 65) {
+            faixaEtaria = 1;
+            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 66) {
+            faixaEtaria = 1;
             System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
         }
     }
