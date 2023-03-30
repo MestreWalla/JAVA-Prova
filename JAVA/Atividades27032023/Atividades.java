@@ -24,7 +24,7 @@ public class Atividades {
 
         // formulas
         double imc = peso / (altura * altura);
-        double ganhar = imc * (altura*altura) - peso;
+        double ganhar = imc - peso;
         double perder = peso - imc;
 
         // HOMEM
