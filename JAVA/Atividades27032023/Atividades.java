@@ -24,8 +24,8 @@ public class Atividades {
 
         // formulas
         double imc = peso / (altura * altura);
-        double ganhar = imc - peso;
-        double perder = peso - imc;
+        double perder = imc - peso;
+        double ganhar = peso - imc;
 
         // HOMEM
         // Menor que 20 = abaixo do peso.
