@@ -53,10 +53,10 @@ public class Atividades {
             System.out.println("O aluno com obesidade leve, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         } else if (sexo.equalsIgnoreCase("masculino") && imc > 28 && imc <= 40) {
-            System.out.println("O aluno com obesidade moderada, e deve perder " + perder + "kg.");
+            System.out.println("O aluno esta com obesidade moderada, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         } else if (sexo.equalsIgnoreCase("masculino") && imc > 40) {
-            System.out.println("O aluno com obesidade mórbida, e deve perder " + perder + "kg.");
+            System.out.println("O aluno esta com obesidade mórbida, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         } else if (sexo.equalsIgnoreCase("feminino") && imc <= 18.9) { // FEMININO
             System.out.println("A aluna esta abaixo do peso e deve ganhar " + ganhar + "kg.");
@@ -66,13 +66,13 @@ public class Atividades {
             System.out.println("A aluna esta no peso normal.");
             System.out.println("Sugerir Atividade Moderada, para melhorar a capacidade aeróbica.");
         } else if (sexo.equalsIgnoreCase("feminino") && imc > 24 && imc <= 28.9) {
-            System.out.println("A aluna com obesidade leve, e deve perder " + perder + "kg.");
+            System.out.println("A aluna esta com obesidade leve, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         } else if (sexo.equalsIgnoreCase("feminino") && imc > 29 && imc <= 39) {
-            System.out.println("A aluna com obesidade moderada, e deve perder " + perder + "kg.");
+            System.out.println("A aluna esta com obesidade moderada, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         } else if (sexo.equalsIgnoreCase("feminino") && imc > 39) {
-            System.out.println("A aluna com obesidade mórbida, e deve perder " + perder + "kg.");
+            System.out.println("A aluna esta com obesidade mórbida, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         }
 
