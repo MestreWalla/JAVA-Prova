@@ -1,4 +1,4 @@
-package JAVA.ATividades27032023;
+package JAVA.Atividades27032023;
 
 import java.util.Scanner;
 
@@ -14,6 +14,7 @@ public class Atividades {
         String nome = sc.nextLine();
         System.out.println("Digite a idade do aluno:");
         int idade = sc.nextInt();
+        sc.nextLine();
         System.out.println("Digite o sexo do aluno:");
         String sexo = sc.nextLine();
         System.out.println("Digite a altura do aluno:");
@@ -23,7 +24,7 @@ public class Atividades {
 
         // formulas
         double imc = peso / (altura * altura);
-        double ganhar = imc - peso;
+        double ganhar = imc * (altura*altura) - peso;
         double perder = peso - imc;
 
         // HOMEM
@@ -41,36 +42,36 @@ public class Atividades {
 
         System.out.println("O peso ideal do aluno é: " + imc + "kg."); // peso ideal
         // Variaveis Masculino e Feminino
-        if (sexo == "masculino" && imc <= 20) { // MASCULINO
+        if (sexo.equalsIgnoreCase("masculino") && imc <= 20) { // MASCULINO
             System.out.println("O aluno esta abaixo do peso e deve ganhar " + ganhar + "kg.");
             System.out.println(
-                    "Sugerir Atividade Difícil, para melhorar a capacidade macima de desempenho para treinos curtos e ganhar massa muscular.");
-        } else if (sexo == "masculino" && imc > 20.1 && imc <= 24.9) {
+                    "Sugerir Atividade Difícil, para melhorar a capacidade maxima de desempenho para treinos curtos e ganhar massa muscular.");
+        } else if (sexo.equalsIgnoreCase("masculino") && imc > 20.1 && imc <= 24.9) {
             System.out.println("O aluno esta no peso normal.");
             System.out.println("Sugerir Atividade Moderada, para melhorar a capacidade aeróbica.");
-        } else if (sexo == "masculino" && imc > 25 && imc <= 29) {
+        } else if (sexo.equalsIgnoreCase("masculino") && imc > 25 && imc <= 29) {
             System.out.println("O aluno com obesidade leve, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
-        } else if (sexo == "masculino" && imc > 28 && imc <= 40) {
+        } else if (sexo.equalsIgnoreCase("masculino") && imc > 28 && imc <= 40) {
             System.out.println("O aluno com obesidade moderada, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
-        } else if (sexo == "masculino" && imc > 40) {
+        } else if (sexo.equalsIgnoreCase("masculino") && imc > 40) {
             System.out.println("O aluno com obesidade mórbida, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
-        } else if (sexo == "feminino" && imc <= 18.9) { // FEMININO
+        } else if (sexo.equalsIgnoreCase("feminino") && imc <= 18.9) { // FEMININO
             System.out.println("A aluna esta abaixo do peso e deve ganhar " + ganhar + "kg.");
             System.out.println(
-                    "Sugerir Atividade Difícil, para melhorar a capacidade macima de desempenho para treinos curtos e ganhar massa muscular.");
-        } else if (sexo == "feminino" && imc > 19 && imc <= 23.9) {
+                    "Sugerir Atividade Difícil, para melhorar a capacidade maxima de desempenho para treinos curtos e ganhar massa muscular.");
+        } else if (sexo.equalsIgnoreCase("feminino") && imc > 19 && imc <= 23.9) {
             System.out.println("A aluna esta no peso normal.");
             System.out.println("Sugerir Atividade Moderada, para melhorar a capacidade aeróbica.");
-        } else if (sexo == "feminino" && imc > 24 && imc <= 28.9) {
+        } else if (sexo.equalsIgnoreCase("feminino") && imc > 24 && imc <= 28.9) {
             System.out.println("A aluna com obesidade leve, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
-        } else if (sexo == "feminino" && imc > 29 && imc <= 39) {
+        } else if (sexo.equalsIgnoreCase("feminino") && imc > 29 && imc <= 39) {
             System.out.println("A aluna com obesidade moderada, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
-        } else if (sexo == "feminino" && imc > 39) {
+        } else if (sexo.equalsIgnoreCase("feminino") && imc > 39) {
             System.out.println("A aluna com obesidade mórbida, e deve perder " + perder + "kg.");
             System.out.println("Sugerir Atividade Leve, para melhorar a resistência e promover a queima de gordura.");
         }
@@ -83,47 +84,26 @@ public class Atividades {
 // Idade V – 56 a 65 anos
 // Idade VI – 66+
 
-        String faixaEtaria = "";
-        switch (idade) {
-            case 0:
-                faixaEtaria = "Idade I";
-                break;
-            case 1:
-                faixaEtaria = "Idade II";
-                break;
-            case 2:
-                faixaEtaria = "Idade III";
-                break;
-            case 3:
-                faixaEtaria = "Idade IV";
-                break;
-            case 4:
-                faixaEtaria = "Idade V";
-                break;
-            case 5:
-                faixaEtaria = "Idade VI";
-                break;
-            default:
-                break;
-        }
-        if (idade >= 16 && < 25) {
-            faixaEtaria = 0;
-            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
-        } else if (idade >= 25 && < 35) {
-            faixaEtaria = 1;
-            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
-        } else if (idade >= 36 && < 45) {
-            faixaEtaria = 2;
-            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
-        } else if (idade >= 46 && < 55) {
-            faixaEtaria = 1;
-            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
-        } else if (idade >= 56 && < 65) {
-            faixaEtaria = 1;
-            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
+        String faixaEtaria = " ";
+
+        if (idade >= 16 && idade < 25) {
+            faixaEtaria = "Idade I";
+            System.out.println("O aluno(a) " + nome + " esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 25 && idade < 35) {
+            faixaEtaria = "Idade II";
+            System.out.println("O aluno(a) " + nome + " esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 36 && idade < 45) {
+            faixaEtaria = "Idade III";
+            System.out.println("O aluno(a) " + nome + " esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 46 && idade < 55) {
+            faixaEtaria = "Idade IV";
+            System.out.println("O aluno(a) " + nome + " esta na faixa etaria: " + faixaEtaria);
+        } else if (idade >= 56 && idade < 65) {
+            faixaEtaria = "Idade V";
+            System.out.println("O aluno(a) " + nome + " esta na faixa etaria: " + faixaEtaria);
         } else if (idade >= 66) {
-            faixaEtaria = 1;
-            System.out.println("O aluno(a) esta na faixa etaria: " + faixaEtaria);
+            faixaEtaria = "Idade VI";
+            System.out.println("O aluno(a) " + nome + " esta na faixa etaria: " + faixaEtaria);
         }
     }
 }
