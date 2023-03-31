@@ -15,13 +15,13 @@ public class Prova {
         System.out.println("Digite o segundo numero:");
         int segundo = sc.nextInt();
         if (operacao == 1) {
-            System.out.println(primeiro + segundo);
+            System.out.println(primeiro + " + " + segundo + " = " + primeiro + segundo);
         } else if (operacao == 2) {
-            System.out.println(primeiro - segundo);
+            System.out.println(primeiro + " - " + segundo + " = " + (primeiro - segundo));
         } else if (operacao == 3) {
-            System.out.println(primeiro * segundo);
+            System.out.println(primeiro + " * " + segundo + " = " + primeiro * segundo);
         } else if (operacao == 4) {
-            System.out.println(primeiro / segundo);
+            System.out.println(primeiro + " / " + segundo + " = " + primeiro / segundo);
         } else {
             System.out.println("Opção invalida reinicie a aplicação.");
         }
