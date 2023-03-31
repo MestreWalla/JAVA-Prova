@@ -58,6 +58,21 @@ public class Prova {
             System.out.println("Seleção inválida.");
         }
     }
+//CORRETO
+    public void Situacao025() {
+        System.out.println(
+                "Bem vindo ao sistema da Escola Corleone do Brooklyn. Informe o número de matricula do aluno:");
+        int matricula = sc.nextInt();
+        System.out.println("matricula" + matricula);
+        // (Time do Chris, Time do Greg, Time do Caruso, Time do Jerome).
+        if(matricula%4==0) {
+            System.out.println("Voce esta no Time do Cris");
+        } else if(matricula%4==1) {
+            System.out.println("Voce esta no Time do Greg");
+        } else if(matricula%4==2) {
+            System.out.println("Voce esta no Time do Caruso");
+        } else {System.out.println("Voce esta no time do Jermome");}
+    }
 
     public void Situacao03() {
         // Morangos – R$ 2,50 o kilo;
@@ -154,7 +169,7 @@ public class Prova {
                 System.out.println("Selecao invalida");
                 return;
         }
-
+// Simbolo || equivale a palavra OU.
         if (fruta3 == "Morangos" || fruta3 == "Maças" || fruta3 == "Bananas") {
             System.out.println("A fruta escolhida foi " + fruta3 + " informe a quantidade em kilos:");
             kg03 = sc.nextInt();
