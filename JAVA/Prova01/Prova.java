@@ -31,6 +31,7 @@ public class Prova {
         System.out.println(
                 "Bem vindo ao sistema da Escola Corleone do Brooklyn. Informe o número de matricula do aluno:");
         int matricula = sc.nextInt();
+        System.out.println("matricula" + matricula);
         // (Time do Chris, Time do Greg, Time do Caruso, Time do Jerome).
         Random rd = new Random();
         int entrada = rd.nextInt(4);
