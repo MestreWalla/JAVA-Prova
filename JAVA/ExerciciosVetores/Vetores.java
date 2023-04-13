@@ -103,25 +103,24 @@ public class Vetores {
 
     public void Exercicio6() {
         int vetorA[] = new int[10], vetorB[] = new int[vetorA.length], vetorC[] = new int[vetorA.length];
-        int x = 1,s=0;
+        int c = 0, s = 0;
 
-        for (int c = 0; c < vetorA.length; c++) {
-            System.out.println("Digite os numeros a serem somados");
+        for (c = 0; c < vetorA.length; c++) {
+            System.out.println("Digite os números a serem somados");
             System.out.println("Digite o valor do Vetor A");
             vetorA[c] = sc.nextInt();
             System.out.println("Digite o valor do Vetor B");
             vetorB[c] = sc.nextInt();
 
             vetorC[c] = vetorA[c] + vetorB[c];
-          x++;
-
         }
-    
-        while (s < vetorC.length) {
-            System.out.println("As somas do indice" +s +"º dos vetores A e B é: " +vetorC[s]);
 
+        while (s < vetorC.length) {
+            System.out.println("A soma do índice " + s + " dos vetores A e B é: " + vetorC[s]);
             s++;
         }
+
+        sc.close(); // Fechar o Scanner após a leitura
     }
 
 }
