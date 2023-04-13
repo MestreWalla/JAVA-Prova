@@ -1,4 +1,4 @@
-package JAVA.Prova01;
+package Prova01;
 
 import java.util.Scanner;
 import java.util.Random;

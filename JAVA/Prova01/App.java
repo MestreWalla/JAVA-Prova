@@ -1,4 +1,4 @@
-package JAVA.Prova01;
+package Prova01;
 
 public class App {
     public static void main(String[] args) {

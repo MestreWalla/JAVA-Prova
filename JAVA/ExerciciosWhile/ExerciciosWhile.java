@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ExerciciosWhile {
     Scanner sc = new Scanner(System.in);
 
-    public static void exercicio04() {
+    public void Exercicio04() {
         // Faça um programa que leia um vetor de 10 caracteres, e diga quantas
         // consoantes foram lidas. Imprima as consoantes.
         String letras[] = new String[10]; // Declaração e criação de um vetor de strings chamado letras com tamanho 10

@@ -1,4 +1,4 @@
-package JAVA.Atividades27032023;
+package Atividades27032023;
 
 import java.util.Scanner;
 
