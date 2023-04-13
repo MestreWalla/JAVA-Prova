@@ -1,4 +1,4 @@
-package ExercicioWhile;
+package JAVA.IteracaoIf.ExercicioWhile;
 
 public class ExercicioWhile {
     // 1. Criar um vetor A com 5 elementos inteiros. Construir um vetor B de mesmo
