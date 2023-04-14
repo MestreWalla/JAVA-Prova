@@ -60,7 +60,7 @@ public class ExerciciosWhile {
     // Aarmazene os numeros pares no vetor PAR e os numeros impares no vetor IMPAR.
     // Imprima ostres valores.
     public void Exercicio05() {
-        int numeros[] = new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+        int numeros[] = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
         int par = 0, imp = 0, i = 0;
         String impares = "", pares = "";
         while (i < numeros.length) {
@@ -83,5 +83,34 @@ public class ExerciciosWhile {
         }
         System.out.println(imp + " numeros impares, com os seguintes numeros: " + impares);
         System.out.println(par + " números pares, com os seguintes numeros: " + pares);
+    }
+
+    // Faça um programa que peça as quatro notas de 10 lunos, calcule e armazene num
+    // vetor a média de cada aluno, imprima o número de alunos com média maior ou
+    // igual a 7.
+    public void Exercicio06() {
+        int medias[] = new int[10];
+        int i = 0;
+        while (i < medias.length) {
+            int nota = sc.nextInt();
+            medias[i] = nota;
+        }
+        i++;
+    }
+
+    // Faça um programa que leia um vetor de 5 números inteiros, mostre a soma, a
+    // multiplicação e os números.
+    public void Exercicio07() {
+    }
+
+    // faça um programa que peça a idade e altura de 5 pessoas, armazene cada
+    // informação no seu respectivo vetor. Imprma a idade e a altura na ordem
+    // inversa a ordem lida.
+    public void Exercicio08() {
+    }
+
+    // Faça um programa que leia um vetorA com 10 números inteiros, calcule e mostre
+    // a soma dos quadrados dos elementos do vetor.
+    public void Exercicio09() {
     }
 }
