@@ -94,8 +94,9 @@ public class ExerciciosWhile {
         while (i < medias.length) {
             int nota = sc.nextInt();
             medias[i] = nota;
+            i++;
         }
-        i++;
+        
     }
 
     // Faça um programa que leia um vetor de 5 números inteiros, mostre a soma, a
