@@ -32,8 +32,9 @@ public class ExerciciosWhile {
         System.out.println("O nº de vogais é " + vogais); // Imprime o número de vogais
     }
 
-    public void Exercicio05() {
-                    // Declaração e inicialização de um vetor de strings chamado letras com 26 letras do alfabeto
+    public void Exercicio04B() {
+        // Declaração e inicialização de um vetor de strings chamado letras com 26
+        // letras do alfabeto
         String letras[] = new String[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
                 "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", };
         int i = 0; // Variável de controle do loop para iterar sobre o vetor letras
@@ -53,5 +54,34 @@ public class ExerciciosWhile {
             i++;
         }
         System.out.println("o nº de consoantes é " + consoantes); // Imprime o número de consoantes contadas
+    }
+
+    // Faça um programa que leia 20 numeros inteiros e armazene-os num vetor.
+    // Aarmazene os numeros pares no vetor PAR e os numeros impares no vetor IMPAR.
+    // Imprima ostres valores.
+    public void Exercicio05() {
+        int numeros[] = new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+        int par = 0, imp = 0, i = 0;
+        String impares = "", pares = "";
+        while (i < numeros.length) {
+            if (numeros[i] % 2 != 0) {
+                imp++;
+                if (impares.isEmpty()) {
+                    impares += numeros[i];
+                } else {
+                    impares += ", " + numeros[i];
+                }
+            } else if (numeros[i] % 2 != 1) {
+                par++;
+                if (pares.isEmpty()) {
+                    pares += numeros[i];
+                } else {
+                    pares += ", " + numeros[i];
+                }
+            }
+            i++;
+        }
+        System.out.println(imp + " numeros impares, com os seguintes numeros: " + impares);
+        System.out.println(par + " números pares, com os seguintes numeros: " + pares);
     }
 }
