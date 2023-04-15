@@ -97,7 +97,7 @@ public class ExerciciosWhile {
             i++;
         }
         
-        System.out.println(media01)
+        System.out.println(media01);
     }
 
     // Faça um programa que leia um vetor de 5 números inteiros, mostre a soma, a
