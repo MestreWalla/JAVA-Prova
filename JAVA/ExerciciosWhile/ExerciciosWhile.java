@@ -89,14 +89,15 @@ public class ExerciciosWhile {
     // vetor a média de cada aluno, imprima o número de alunos com média maior ou
     // igual a 7.
     public void Exercicio06() {
-        int medias[] = new int[10];
+        int media01[] = new int[4];
         int i = 0;
-        while (i < medias.length) {
+        while (i < media01.length) {
             int nota = sc.nextInt();
-            medias[i] = nota;
+            media01[i] = nota;
             i++;
         }
         
+        System.out.println(media01)
     }
 
     // Faça um programa que leia um vetor de 5 números inteiros, mostre a soma, a
