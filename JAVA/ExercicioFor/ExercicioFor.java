@@ -17,7 +17,7 @@ public class ExercicioFor {
         }
     }
     public void Exemplo03() {
-        //Cariinho de compra
+        //Carrinho de compra
         double[] carrinhoCompra = new double[]{19.90,35.70,56.80,97.50};
         // Finalizar a compra
         double valorFinal = 0;
@@ -33,7 +33,7 @@ public class ExercicioFor {
         //Ler 4 notas e mostrar as 4 notas e a média
         double[] vetorNotas = new double[4];
         for (int i = 0; i < vetorNotas.length; i++) {
-            System.out.println("Primeira nota: " + (i+1)+":");
+            System.out.println("Informe a " + (i+1)+"ª nota: ");
             vetorNotas[i] = sc.nextDouble();
         }
         //Imprimir as 4 notas e calcular a média
@@ -50,7 +50,7 @@ public class ExercicioFor {
         // igual a 7.
         public void Exemplo05() {
             double[] notasAlunos = new double[10];
-        // Vetor guardar méias
+        // Vetor guardar médias
             double vetorMedia[] = new double[10];
         // Preencher o vetor de médias
             for (int i = 0; i < notasAlunos.length; i++) {
@@ -110,5 +110,65 @@ public class ExercicioFor {
             soma+=(vetorA[i]*vetorA[i]);
         }
         System.out.println("A soma é dos quadrados de todos é : " + soma);
+    }
+
+    public void Exercicio10() {
+        //char letras[] = new char[] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'};
+        String letras[] = new String[] {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
+        // Percorrer o Vetor para procurar letras vogais ou consoantes
+        // Contar o numero de consoantes
+        int cont = 0;
+        for (int i = 0; i < letras.length; i++) {
+            if (letras[i]!="a" && letras[i]!="e" && letras[i]!="i" && letras[i]!="o" && letras[i]!="u") {
+                System.out.println(letras[i]+" é consoante");
+                cont++;
+            }
+            System.out.println("O numero de consoantes é "+cont);
+        }
+    }
+    public void Exercicio10EX() {
+        String palavra = sc.next(); // Ler a palavra digitada pelo usuario e guardar na string
+        palavra = palavra.toLowerCase(null);
+        int cont = 0;
+        for (int i = 0; i < palavra.length(); i++) {
+            char c = palavra.charAt(i);
+            if (c !='a' && c !='e' && c !='i' && c !='o' && c !='u') {
+                System.out.println(c +" é consoante");
+                cont++;
+            } else {
+                System.out.println(c+" é vogal");
+            }
+            System.out.println("O numero de consoantes é "+cont);
+        }
+    }
+    //Ler 20 numeros e separar em pares e impares
+    public void Exercicio11() {
+        // Criar um vetor para os numeros
+        int numeros[]=new int[20];
+        int contPar = 0, contImpar = 0;
+        // Preencher os vetores
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("Informe o numero ["+i+"]= ");
+            numeros[i]=sc.nextInt();
+            if(numeros[i]%2==0){
+                contPar++;
+            } else {
+                contImpar++;
+            }
+        }
+        // Após a contagem dos pares e impares, criar os respectivos vetores
+        int nPar[] = new int[contPar];
+        int nImpar[] = new int[contImpar];
+        // Distribuir os numeros do vetor numeros para os vetore par e impar
+        contPar = 0; contImpar = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            if(numeros[i]%2==0) {
+                nPar[contPar]=numeros[i];
+                contPar++;
+            } else {
+                nImpar[contImpar]=numeros[i];
+                contImpar++;
+            }
+        }
     }
 }
