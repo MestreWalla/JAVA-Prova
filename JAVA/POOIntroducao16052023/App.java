@@ -3,8 +3,8 @@ package POOIntroducao16052023;
 public class App {
     public static void main(String[] args) {
         // Criar o objeto
-        RegistraAluno aluno1 = new RegistraAluno(); // Objeto
-        RegistraAluno aluno2 = new RegistraAluno(); // Objeto
+        RegistraAluno aluno1 = new RegistraAluno(); // Objeto 01
+        RegistraAluno aluno2 = new RegistraAluno(); // Objeto 02
 
         // Modificar o objeto (set)
         aluno1.setNome("Ana Clara Pereira");

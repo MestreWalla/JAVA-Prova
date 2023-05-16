@@ -25,7 +25,7 @@ public class RegistraAluno {
     }
 
     // retorna idade do estudante
-    public int getIdadee() {
+    public int getIdade() {
         return idade;
     }
 
