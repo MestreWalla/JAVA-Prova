@@ -74,8 +74,4 @@ public class RegistraAluno {
     public void setNotaCiencias(double notaCiencias) {
         this.notaCiencias = notaCiencias;
     }
-
-    public String getIdade() {
-        return null;
-    }
 }
