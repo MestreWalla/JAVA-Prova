@@ -113,17 +113,6 @@ public class Prova {
                 contImpar++;
             }
         }
-        int nPar, nImpar;
-        for (int i = 0; i < numeros.length; i++) {
-            int numerosRd = rd.nextInt(100);
-            numeros[i] = numerosRd;
-            if (numeros[i] % 2 == 0) {
-                nPar = numeros[i];
-            } else {
-                nImpar = numeros[i];
-            }
-        }
-        System.out.println("Pares: " + nPar + " Impares: " + nImpar);
         // Vetores Pares e Impares
         int nPar[] = new int[contPar];
         int nImpar[] = new int[contImpar];
@@ -139,7 +128,6 @@ public class Prova {
                 contImpar++;
             }
         }
-        
         System.out.println("Pares: " + contPar + " Impares: " + contImpar);
     }
 }
