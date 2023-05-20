@@ -99,11 +99,12 @@ public class Prova {
         // Exibir a quantidade de números pares existem nas posições ímpares do vetor
         // Exibir a quantidade de números ímpares existem nas posições pares do vetor
         // Criar um vetor para os numeros
-        int numerosRd = rd.nextInt(100);
+        
         int numeros[] = new int[100];
         int contPar = 0, contImpar = 0;
         // Preencher os vetores
         for (int i = 0; i < numeros.length; i++) {
+            int numerosRd = rd.nextInt(100);
             numeros[i] = numerosRd;
             if (numeros[i] % 2 == 0) {
                 contPar++;
