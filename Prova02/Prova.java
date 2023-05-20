@@ -98,8 +98,9 @@ public class Prova {
         // Exibir apenas os números ímpares do vetor
         // Exibir a quantidade de números pares existem nas posições ímpares do vetor
         // Exibir a quantidade de números ímpares existem nas posições pares do vetor
+       
+
         // Criar um vetor para os numeros
-        
         int numeros[] = new int[100];
         int contPar = 0, contImpar = 0;
         // Preencher os vetores
@@ -112,6 +113,17 @@ public class Prova {
                 contImpar++;
             }
         }
+        int nPar, nImpar;
+        for (int i = 0; i < numeros.length; i++) {
+            int numerosRd = rd.nextInt(100);
+            numeros[i] = numerosRd;
+            if (numeros[i] % 2 == 0) {
+                nPar = numeros[i];
+            } else {
+                nImpar = numeros[i];
+            }
+        }
+        System.out.println("Pares: " + nPar + " Impares: " + nImpar);
         // Vetores Pares e Impares
         int nPar[] = new int[contPar];
         int nImpar[] = new int[contImpar];
@@ -126,6 +138,8 @@ public class Prova {
                 nImpar[contImpar] = numeros[i];
                 contImpar++;
             }
-        } System.out.println("Pares: " + contPar + " Impares: " + contImpar);
+        }
+        
+        System.out.println("Pares: " + contPar + " Impares: " + contImpar);
     }
 }
