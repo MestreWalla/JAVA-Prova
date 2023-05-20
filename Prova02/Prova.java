@@ -69,7 +69,7 @@ public class Prova {
         int numero = rd.nextInt(1000);
         System.out.println("Adivinhe o numero que sorteei: ");
         int entrada = 0;
-        int media01[] = new int[numero];
+        int vetor[] = new int[numero];
         int i = 0;
         System.out.println("Digite um numero de 0 a 1000");
         while (entrada != numero) {
