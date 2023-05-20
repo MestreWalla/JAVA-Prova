@@ -116,7 +116,7 @@ public class Prova {
         // Vetores Pares e Impares
         int nPar[] = new int[contPar];
         int nImpar[] = new int[contImpar];
-        // Distribuição nos vetore2 pares e impares
+        // Distribuição nos vetores pares e impares
         contPar = 0;
         contImpar = 0;
         for (int i = 0; i < numeros.length; i++) {
@@ -128,6 +128,7 @@ public class Prova {
                 contImpar++;
             }
         }
+        System.out.println("Pares: " + nPar + " Impares: " + nImpar);
         System.out.println("Pares: " + contPar + " Impares: " + contImpar);
     }
 }
