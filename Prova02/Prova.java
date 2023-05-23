@@ -21,14 +21,15 @@ public class Prova {
         int linhas = sc.nextInt();
         System.out.println("Informe a quantidade de numeros: ");
         int numeros = sc.nextInt();
-
+        // Criar Matriz
         int matriz[][] = new int[linhas][numeros];
-
+        // Preencher Matriz
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
                 matriz[i][j] = rd.nextInt(10);
             }
         }
+        // Imprimir Matriz [i][j]
         for (int i = 0; i < matriz.length; i++) {
             System.out.print("[ ");
             for (int j = 0; j < matriz[0].length; j++) {
@@ -36,6 +37,7 @@ public class Prova {
             }
             System.out.println("]");
         }
+        // Modificar Matriz [i][j] de acordo com as condições
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
                 if (matriz[i][j] > matriz[j][i]) {
@@ -47,8 +49,8 @@ public class Prova {
                 }
             }
         }
-        System.out.println();
-        System.out.println();
+        System.out.println("====================="); // Pular Linha
+        // Imprimir matriz modificada
         for (int i = 0; i < matriz.length; i++) {
             System.out.print("[ ");
             for (int j = 0; j < matriz[0].length; j++) {
@@ -66,11 +68,9 @@ public class Prova {
         // Pedir novos palpites até que o usuário acerte e, depois disso, mostrar em
         // quantas tentativas ele acertou.
 
-        int numero = rd.nextInt(1000);
+        int numero = rd.nextInt(1000);//Numero Aleatorio de 0 a 999
         System.out.println("Adivinhe o numero que sorteei: ");
-        int entrada = 0;
-        int vetor[] = new int[numero];
-        int i = 0;
+        int entrada = 0, i = 0;
         System.out.println("Digite um numero de 0 a 1000");
         while (entrada != numero) {
             entrada = sc.nextInt();
@@ -84,6 +84,7 @@ public class Prova {
                 System.out.println("é maior");
                 i++;
             }
+            System.out.println("Tenta outra:");
         }
         System.out.println("Acertou miseravi.");
         System.out.println("Voce acertou na " + i + "ª tentativa");
@@ -98,7 +99,6 @@ public class Prova {
         // Exibir apenas os números ímpares do vetor
         // Exibir a quantidade de números pares existem nas posições ímpares do vetor
         // Exibir a quantidade de números ímpares existem nas posições pares do vetor
-       
 
         // Criar um vetor para os numeros
         int numeros[] = new int[100];
