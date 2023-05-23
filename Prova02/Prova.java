@@ -128,7 +128,17 @@ public class Prova {
                 contImpar++;
             }
         }
-        System.out.println("Pares: " + nPar + " Impares: " + nImpar);
-        System.out.println("Pares: " + contPar + " Impares: " + contImpar);
+        // Imprimir números
+        System.out.print("Pares: ");
+        for (int i = 0; i < contPar; i++) {
+            System.out.print(nPar[i] + " ");
+        }
+        System.out.println(); // Pular linha
+        System.out.print("Ímpares: ");
+        for (int i = 0; i < contImpar; i++) {
+            System.out.print(nImpar[i] + " ");
+        }
+        System.out.println(); // Pular linha
+        System.out.println("Pares: " + contPar + " Impares: " + contImpar); // Imprimir quantidade
     }
 }
