@@ -68,21 +68,21 @@ public class Prova {
         // Pedir novos palpites até que o usuário acerte e, depois disso, mostrar em
         // quantas tentativas ele acertou.
 
-        int numero = rd.nextInt(1000);//Numero Aleatorio de 0 a 999
+        int numero = rd.nextInt(1000);// Numero Aleatorio de 0 a 999
         System.out.println("Adivinhe o numero que sorteei: ");
-        int entrada = 0, i = 0;
+        int entrada = 0, i = 0; // Variavel armasena entrada e contador
         System.out.println("Digite um numero de 0 a 1000");
-        while (entrada != numero) {
-            entrada = sc.nextInt();
-            if (entrada > numero) {
+        while (entrada != numero) { // Diferente
+            entrada = sc.nextInt(); // Entrada de dados
+            if (entrada > numero) { // Maior que
                 System.out.println("Você é um baita de um burrão.");
                 System.out.println("é menor");
-                i++;
+                i++; // Incrementa contador
             }
-            if (entrada < numero) {
+            if (entrada < numero) { // Menor que
                 System.out.println("Você é um baita de um burrão.");
                 System.out.println("é maior");
-                i++;
+                i++; // Incrementa contador
             }
             System.out.println("Tenta outra:");
         }
@@ -101,21 +101,19 @@ public class Prova {
         // Exibir a quantidade de números ímpares existem nas posições pares do vetor
 
         // Criar um vetor para os numeros
-        int numeros[] = new int[100];
-        int contPar = 0, contImpar = 0;
+        int numeros[] = new int[900], contPar = 0, contImpar = 0;
         // Preencher os vetores
         for (int i = 0; i < numeros.length; i++) {
-            int numerosRd = rd.nextInt(100);
+            int numerosRd = rd.nextInt(100) + 1;
             numeros[i] = numerosRd;
-            if (numeros[i] % 2 == 0) {
+            if (numeros[i] % 2 == 0) { // Resto divisao = 0
                 contPar++;
             } else {
                 contImpar++;
             }
         }
         // Vetores Pares e Impares
-        int nPar[] = new int[contPar];
-        int nImpar[] = new int[contImpar];
+        int nPar[] = new int[contPar], nImpar[] = new int[contImpar];
         // Distribuição nos vetores pares e impares
         contPar = 0;
         contImpar = 0;
@@ -129,12 +127,12 @@ public class Prova {
             }
         }
         // Imprimir números
-        System.out.print("Pares: ");
+        System.out.println("Pares: ");
         for (int i = 0; i < contPar; i++) {
             System.out.print(nPar[i] + " ");
         }
         System.out.println(); // Pular linha
-        System.out.print("Ímpares: ");
+        System.out.println("Ímpares: ");
         for (int i = 0; i < contImpar; i++) {
             System.out.print(nImpar[i] + " ");
         }
