@@ -4,19 +4,21 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        
         // Criar objeto
         Elevador elevador1 = new Elevador(10, 10);
         Scanner sc = new Scanner(System.in);
+
         // Inicializar
         elevador1.inicializa();
         boolean ligado = true;
         while (ligado) {
             System.out.println("Informe a ação desejada"
-                    + "/n1-Entrar"
-                    + "/n2-Descer"
-                    + "/n3-Subir"
-                    + "/n4-Descer"
-                    + "/n5-Desligar");
+                    + "\n1-Entrar"
+                    + "\n2-Descer"
+                    + "\n3-Subir"
+                    + "\n4-Descer"
+                    + "\n5-Desligar");
             int acao = sc.nextInt();
             switch (acao) {
                 case 1:
@@ -43,5 +45,3 @@ public class App {
         }
     }
 }
-// Classe Elevador (Andar atual, total de andares, capacidade elevador, numero
-// de pessoas
