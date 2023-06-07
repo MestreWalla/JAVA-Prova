@@ -2,8 +2,6 @@ package Atividade30052023B;
 
 import java.util.Random;
 
-import javax.swing.JOptionPane;
-
 public class App {
     public static void main(String[] args) {
         Random rd = new Random(0);
