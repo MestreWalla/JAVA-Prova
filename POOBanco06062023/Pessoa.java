@@ -1,16 +1,18 @@
 package POOBanco06062023;
 
 public class Pessoa {
-    //Nome, CPF, Conta
+    //Nome, CPF, Conta, idade
     String nome;
     String sobreNome;
     String cpf;
+    String idade;
     
     
-    public Pessoa(String nome, String sobreNome, String cpf) {
+    public Pessoa(String nome, String sobreNome, String cpf, String idade) {
         this.nome = nome;
         this.sobreNome = sobreNome;
         this.cpf = cpf;
+        this.idade = idade;
     }
     public String getNome() {
         return nome;
@@ -30,5 +32,10 @@ public class Pessoa {
     public void setSobreNome(String sobreNome) {
         this.sobreNome = sobreNome;
     }
-    
+    public String getIdade() {
+        return idade;
+    }
+    public void setIdade(String idade) {
+        this.idade = idade;
+    }
 }
