@@ -8,7 +8,6 @@ public class App {
     public static void main(String[] args) {
         Conta[] contas = new Conta[5]; // Criar 5 contas
         Scanner sc = new Scanner(System.in);
-        boolean opcao = true;
         String opcoes = JOptionPane.showInputDialog("Informe a ação desejada\n1-Logar\n2-Cadastrar\n3-Encerrar");
 
 
@@ -24,7 +23,6 @@ public class App {
                     Conta.cadastrar(contas);
                     break;
                 case 3:
-                    opcao = false;
                     break;
                 default:
                     System.out.println("Informe um número válido");

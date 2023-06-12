@@ -70,24 +70,29 @@ public class Conta {
     }
 
     public static void realizarLogin(Conta[] contas) {
-        Scanner sc = new Scanner(System.in);
         String cpf = JOptionPane.showInputDialog("CPF:"); // Solicita o CPF para o login
 
         boolean loginSucesso = false;
 
         for (Conta conta : contas) {
-            if (conta != null && conta.getCpf().equals(cpf)) { // Verifica se a conta existe e se o CPF corresponde ao informado
+            if (conta != null && conta.getCpf().equals(cpf)) { // Verifica se a conta existe e se o CPF corresponde ao
+                                                               // informado
                 String senha = JOptionPane.showInputDialog("Senha:"); // Solicitar senha para o login
                 if (conta.getSenha().equals(senha)) { // Verificar senha
                     loginSucesso = true;
+                    JOptionPane.showInputDialog("Logado");
                     break; // Interrompe o loop quando o login é bem-sucedido
+                } else {
+                    JOptionPane.showInputDialog("Senha Invalida");
                 }
-            }
+            } else {JOptionPane.showInputDialog("Usuario Invalido");}
         }
 
         if (loginSucesso) {
             System.out.println("Login realizado com sucesso!");
-            // !!!!!!EXIBIR INFORMAÇÕES DA CONTA!!!!!!
+            // Ver Informaçoes da conta (Saldo, nConta, )
+            // Transferir
+            // Sair
         } else {
             System.out.println("Falha no login. Verifique o CPF e senha.");
         }
