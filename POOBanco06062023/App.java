@@ -1,15 +1,14 @@
 package POOBanco06062023;
 
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
+
+import POOBanco06062023.Conta.Conta;
 
 public class App {
     public static void main(String[] args) {
         Conta[] contas = new Conta[5]; // Criar 5 contas
-        Scanner sc = new Scanner(System.in);
-        String opcoes = JOptionPane.showInputDialog("Informe a ação desejada\n1-Logar\n2-Cadastrar\n3-Encerrar");
 
+        String opcoes = JOptionPane.showInputDialog("\n-------------Bem vindo ao Banco PT*-------------"+"\nAqui você não perde, mas tambem não ganha"+"\nInforme a ação desejada\n1-Logar\n2-Cadastrar\n3-Encerrar");
 
         while (opcoes != null) {
             int acao  = Integer.parseInt(opcoes);

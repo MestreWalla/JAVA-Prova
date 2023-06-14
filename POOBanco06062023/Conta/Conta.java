@@ -1,7 +1,8 @@
-package POOBanco06062023;
+package POOBanco06062023.Conta;
 
-import java.util.Scanner;
 import javax.swing.JOptionPane;
+
+import POOBanco06062023.Pessoa;
 
 public class Conta {
     // VARIAVEIS DE ARMAZENAMENTO
@@ -28,9 +29,7 @@ public class Conta {
     }
 
     public static void cadastrar(Conta[] contas) {
-        // Criar Usuário
-        Scanner sc = new Scanner(System.in);
-        // Cria uma nova pessoa
+        // Cria uma nova pessoa / usuario
         Pessoa pessoa01 = new Pessoa("", "", "", 0);
 
         // (SET) INFORMAR IDADE PARA VALIDAÇÃO
@@ -61,16 +60,15 @@ public class Conta {
             String mensagem = "Nome Completo: " + pessoa01.getNome() + " " + pessoa01.getSobreNome()
                     + "\nCPF: " + pessoa01.getCpf()
                     + "\nIdade: " + pessoa01.getIdade();
-            JOptionPane.showMessageDialog(null, mensagem); // Exibe as informações da conta em uma caixa de diálogo
+            JOptionPane.showMessageDialog(null, mensagem); // Exibe as informações da String mensagem em uma caixa de diálogo
         } else {
             JOptionPane.showMessageDialog(null,
-                    "Você não pode criar uma conta, procure uma agência junto aos seus pais.");
+                    "\nQue pena, sua idade não é suficiente"+"\nVocê não pode criar uma conta sozinho ainda," + "\nprocure uma agência fisica junto aos seus pais.");
         }
-        sc.close();
     }
 
     public static void realizarLogin(Conta[] contas) {
-        String cpf = JOptionPane.showInputDialog("CPF:"); // Solicita o CPF para o login
+        String cpf = JOptionPane.showInputDialog("CPF:"); // Solicitar CPF para o login
 
         boolean loginSucesso = false;
 
