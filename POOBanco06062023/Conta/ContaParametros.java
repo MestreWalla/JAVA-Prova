@@ -34,23 +34,29 @@ public class ContaParametros {
         }
     }
 
-    public void transferir() {
-        double transferir = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor da transferencia"));
-        if (transferir > saldo) {
-            JOptionPane.showMessageDialog(null, "Saldo insuficiente");
-        } else {
-            saldo -= transferir;
-            int nContaBuscada = Integer.parseInt(JOptionPane.showInputDialog("Informe o número da conta"));
-            for (i = 0; i < contPJ.length; i++) {
-                    if (nContaBuscada == clientePJ[i].getnConta()) {
-                    JOptionPane.showMessageDialog(null, "Deposito Realizado");
-                    clientePJ[i] += transferir;
-                } else {
-                    JOptionPane.showMessageDialog(null, "Conta não encontrada");
-                }
+    // Dentro da classe ContaParametros
+public void transferir(ContaPJ[] clientePJ) {
+    double transferir = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor da transferência"));
+    if (transferir > saldo) {
+        JOptionPane.showMessageDialog(null, "Saldo insuficiente");
+    } else {
+        saldo -= transferir;
+        int nContaBuscada = Integer.parseInt(JOptionPane.showInputDialog("Informe o número da conta"));
+        int i;
+        for (i = 0; i < clientePJ.length; i++) {
+            if (nContaBuscada == clientePJ[i].getnConta()) {
+                JOptionPane.showMessageDialog(null, "Transferência Realizada");
+                clientePJ[i].setSaldo(clientePJ[i].getSaldo() + transferir);
+                break;
             }
         }
+        if (i == clientePJ.length) {
+            JOptionPane.showMessageDialog(null, "Conta não encontrada");
+        }
     }
+}
+
+    
 
     public void deposito() {
         double deposito = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor do Deposito"));

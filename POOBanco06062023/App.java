@@ -50,7 +50,8 @@ public class App {
                                     + "\n2-Realizar Saque"
                                     + "\n3-Transferir"
                                     + "\n4-Deposito"
-                                    + "\n5-Emprestimo"));
+                                    + "\n5-Emprestimo"
+                                    + "\n6-Sair da conta"));
                             if (acao2 == 1) { // saldo
                                 JOptionPane.showMessageDialog(null,
                                         "Seu Saldo é de R$ " + clientePJ[i].getSaldo());
@@ -59,9 +60,9 @@ public class App {
                                 JOptionPane.showMessageDialog(null,
                                         "Seu Saldo é de R$ " + clientePJ[i].getSaldo());
                             } else if (acao2 == 3) { // transferir
-                                clientePJ[i].transferir();
-                                JOptionPane.showMessageDialog(null,
-                                        "Seu Saldo é de R$ " + clientePJ[i].getSaldo());
+                                clientePJ[i].transferir(clientePJ);
+                                JOptionPane.showMessageDialog(null, "Seu Saldo é de R$ " + clientePJ[i].getSaldo());
+
                             } else if (acao2 == 4) { // deposito
                                 clientePJ[i].deposito();
                                 JOptionPane.showMessageDialog(null,
@@ -70,6 +71,11 @@ public class App {
                                 clientePJ[i].emprestimo();
                                 JOptionPane.showMessageDialog(null,
                                         "Seu Saldo é de R$ " + clientePJ[i].getSaldo());
+                            } else if (acao2 == 6) { // Sair da conta
+                                JOptionPane.showMessageDialog(null,
+                                        "Sessão encerrada. Obrigado por utilizar o Banco PT*");
+                                acesso = false; // Define acesso como falso para sair do loop
+                                break; // Sai do loop while (acesso)
                             } else {
                                 break;
                             }
@@ -114,7 +120,8 @@ public class App {
                                     + "\n2-Realizar Saque"
                                     + "\n3-Transferir"
                                     + "\n4-Deposito"
-                                    + "\n5-Emprestimo"));
+                                    + "\n5-Emprestimo"
+                                    + "\n6-Sair da conta"));
                             if (acao2 == 1) { // saldo
                                 JOptionPane.showMessageDialog(null,
                                         "Seu Saldo é de R$ " + clientePF[i].getSaldo());
@@ -123,7 +130,7 @@ public class App {
                                 JOptionPane.showMessageDialog(null,
                                         "Seu Saldo é de R$ " + clientePF[i].getSaldo());
                             } else if (acao2 == 3) { // transferir
-                                clientePF[i].transferir();
+                                clientePF[i].transferir(clientePJ);
                                 JOptionPane.showMessageDialog(null,
                                         "Seu Saldo é de R$ " + clientePF[i].getSaldo());
                             } else if (acao2 == 4) { // deposito
@@ -134,6 +141,11 @@ public class App {
                                 clientePF[i].emprestimo();
                                 JOptionPane.showMessageDialog(null,
                                         "Seu Saldo é de R$ " + clientePF[i].getSaldo());
+                            } else if (acao2 == 6) { // Sair da conta
+                                JOptionPane.showMessageDialog(null,
+                                        "Sessão encerrada. Obrigado por utilizar o Banco PT*");
+                                acesso = false; // Define acesso como falso para sair do loop
+                                break; // Sai do loop while (acesso)
                             } else {
                                 break;
                             }
