@@ -1,10 +1,7 @@
 package Atividade30052023B;
 
-import java.util.Random;
-
 public class App {
     public static void main(String[] args) {
-        Random rd = new Random(0);
         //vetor de objetos
         Agenda pessoas[] = new Agenda[10];
         //preencher o meu vetor/array
